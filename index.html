@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
   <style>
-    /* ── CSS Variables ─────────────────────────────── */
+    
     :root {
       --bg:        #0d1117;
       --surface:   #161b22;
@@ -25,7 +25,7 @@
       --transition: 0.3s ease;
     }
 
-    /* ── Reset ─────────────────────────────────────── */
+  
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -41,7 +41,6 @@
     img { max-width: 100%; display: block; }
 
 
-    /* ── Bootstrap Icons sizing ────────────────────── */
     .skill-group-icon i { font-size: 1.8rem; color: var(--accent); }
     .project-icon i { font-size: 1.8rem; color: var(--accent); }
     .edu-school i { color: var(--accent); margin-right: 4px; }
@@ -51,12 +50,12 @@
     .lang-chip i { font-size: 0.8rem; color: var(--accent); }
     .form-submit i { font-size: 0.9rem; }
 
-    /* ── Scrollbar ─────────────────────────────────── */
+    
     ::-webkit-scrollbar { width: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--accent); border-radius: 3px; }
 
-    /* ── Nav ───────────────────────────────────────── */
+   
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       display: flex; align-items: center; justify-content: space-between;
@@ -85,7 +84,7 @@
     .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
     .hamburger span { display: block; width: 24px; height: 2px; background: var(--text); border-radius: 2px; transition: var(--transition); }
 
-    /* ── Hero ──────────────────────────────────────── */
+
     #home {
       min-height: 100vh;
       display: flex; align-items: center;
@@ -212,7 +211,6 @@
       display: block;
     }
 
-    /* ── Section Base ─────────────────────────────── */
     section { padding: 6rem 5%; }
     .section-inner { max-width: 1100px; margin: 0 auto; }
     .section-label {
@@ -233,7 +231,6 @@
     }
     .section-title span { color: var(--accent); }
 
-    /* ── About ────────────────────────────────────── */
     #about { background: var(--surface); }
     .about-grid {
       display: grid;
@@ -277,7 +274,6 @@
       color: var(--muted);
     }
 
-    /* ── Skills ───────────────────────────────────── */
     #skills {}
     .skills-grid {
       display: grid;
@@ -333,7 +329,6 @@
       color: var(--muted);
     }
 
-    /* ── Experience ───────────────────────────────── */
     #experience { background: var(--surface); }
     .timeline { position: relative; padding-left: 2rem; }
     .timeline::before {
@@ -376,7 +371,6 @@
     .timeline-list li { font-size: 0.88rem; color: var(--muted); margin-bottom: 0.4rem; position: relative; }
     .timeline-list li::before { content: '→'; position: absolute; left: -1rem; color: var(--accent); font-size: 0.7rem; top: 4px; }
 
-    /* ── Projects ─────────────────────────────────── */
     #projects {}
     .projects-grid {
       display: grid;
@@ -415,7 +409,6 @@
       border-radius: 4px;
     }
 
-    /* ── Education ────────────────────────────────── */
     #education { background: var(--surface); }
     .edu-grid {
       display: grid;
@@ -443,7 +436,6 @@
     .edu-field { font-size: 0.85rem; color: var(--accent2); margin-bottom: 0.3rem; }
     .edu-school { font-size: 0.85rem; color: var(--muted); }
 
-    /* ── Contact ──────────────────────────────────── */
     #contact {}
     .contact-inner {
       display: grid;
@@ -504,7 +496,6 @@
     }
     .form-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,212,170,0.3); }
 
-    /* ── Footer ───────────────────────────────────── */
     footer {
       border-top: 1px solid var(--border);
       padding: 2rem 5%;
@@ -514,7 +505,6 @@
     }
     footer span { color: var(--accent); }
 
-    /* ── Mobile Nav ───────────────────────────────── */
     @media (max-width: 768px) {
       .hamburger { display: flex; }
       .nav-links {
@@ -540,7 +530,6 @@
       section { padding: 4rem 5%; }
     }
 
-    /* ── Fade-in animation ────────────────────────── */
     .fade-up {
       opacity: 0;
       transform: translateY(30px);
@@ -554,7 +543,6 @@
 </head>
 <body>
 
-  <!-- ── NAV ──────────────────────────────────────── -->
   <nav id="navbar">
     <div class="nav-logo">AK.</div>
     <ul class="nav-links" id="navLinks">
@@ -571,7 +559,6 @@
     </div>
   </nav>
 
-  <!-- ── HERO ─────────────────────────────────────── -->
   <section id="home">
     <div class="hero-glow"></div>
     <div class="hero-glow2"></div>
@@ -598,7 +585,6 @@
     </div>
   </section>
 
-  <!-- ── ABOUT ─────────────────────────────────────── -->
   <section id="about">
     <div class="section-inner">
       <p class="section-label">Get to know me</p>
@@ -651,7 +637,6 @@
     </div>
   </section>
 
-  <!-- ── SKILLS ─────────────────────────────────────── -->
   <section id="skills">
     <div class="section-inner">
       <p class="section-label">What I work with</p>
@@ -726,7 +711,6 @@
     </div>
   </section>
 
-  <!-- ── EXPERIENCE ────────────────────────────────── -->
   <section id="experience">
     <div class="section-inner">
       <p class="section-label">Work history</p>
@@ -773,7 +757,6 @@
     </div>
   </section>
 
-  <!-- ── PROJECTS ──────────────────────────────────── -->
   <section id="projects">
     <div class="section-inner">
       <p class="section-label">What I've built</p>
@@ -833,7 +816,6 @@
     </div>
   </section>
 
-  <!-- ── EDUCATION ─────────────────────────────────── -->
   <section id="education">
     <div class="section-inner">
       <p class="section-label">Academic background</p>
@@ -861,7 +843,6 @@
     </div>
   </section>
 
-  <!-- ── CONTACT ───────────────────────────────────── -->
   <section id="contact">
     <div class="section-inner">
       <p class="section-label">Let's work together</p>
@@ -918,27 +899,24 @@
     </div>
   </section>
 
-  <!-- ── FOOTER ────────────────────────────────────── -->
   <footer>
     <p>Built by <span>Arun Kumar C</span> · Python Full Stack Developer · Sharjah, UAE</p>
     <p style="margin-top:0.3rem">© 2025 All rights reserved</p>
   </footer>
 
-  <!-- ── JS ────────────────────────────────────────── -->
   <script>
-    // Mobile nav toggle
+    
     function toggleNav() {
       document.getElementById('navLinks').classList.toggle('open');
     }
 
-    // Close nav on link click
     document.querySelectorAll('.nav-links a').forEach(link => {
       link.addEventListener('click', () => {
         document.getElementById('navLinks').classList.remove('open');
       });
     });
 
-    // Fade-up on scroll
+    
     const fadeEls = document.querySelectorAll('.fade-up');
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
@@ -950,12 +928,12 @@
     }, { threshold: 0.12 });
     fadeEls.forEach(el => observer.observe(el));
 
-    // Trigger hero immediately
+    
     document.querySelectorAll('#home .fade-up').forEach(el => {
       setTimeout(() => el.classList.add('visible'), 100);
     });
 
-    // Active nav highlight on scroll
+    
     const sections = document.querySelectorAll('section[id]');
     window.addEventListener('scroll', () => {
       let current = '';
@@ -967,7 +945,7 @@
       });
     });
 
-    // Contact form handler
+    
     function handleForm(e) {
       e.preventDefault();
       const btn = e.target.querySelector('.form-submit');
